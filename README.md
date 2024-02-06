@@ -10,9 +10,9 @@ Simple browser device uuid generation plugin. Reworked to avoid build bugs.
 ## Usage overview
 
 ```javascript
-import { DeviceUUID } from 'device-uuid-liq';
+import UUID from 'device-uuid-liq';
 
-const uuid = DeviceUUID.get();
+const uuid = UUID.get();
 ```
 
 #### Execute the plugin:
@@ -23,7 +23,7 @@ as a result example:
 
 custom device uuid generation:
 ```javascript
-const du = DeviceUUID.parse();
+const du = UUID.parse();
     const dua = [
         du.language,
         du.platform,
